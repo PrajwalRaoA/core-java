@@ -1,18 +1,40 @@
 class Bank {
     private String name;
-    private String code;
+    private int code;
+    private String branch;
+    private int employees;
+    private String type;
 
-    public void setName(String name) {
-        this.name = name;
+    public Bank() {
     }
-    public void setCode(String code) {
+
+    public Bank(String name, int code) {
+        System.out.println("Initializing name and code");
+        this.name = name;
         this.code = code;
     }
-    public String getName() {
-        return name;
-    }
-    public String getCode() {
-        return code;
-    }
-}
 
+    public Bank(String name, int code, String branch) {
+        this(name, code);
+        System.out.println("Initializing branch");
+        this.branch = branch;
+    }
+
+    public Bank(String name, int code, String branch, int employees) {
+        this(name, code, branch);
+        System.out.println("Initializing employees");
+        this.employees = employees;
+    }
+
+    public Bank(String name, int code, String branch, int employees, String type) {
+        this(name, code, branch, employees);
+        System.out.println("Initializing type");
+        this.type = type;
+    }
+
+    public String getName() { return name; }
+    public int getCode() { return code; }
+    public String getBranch() { return branch; }
+    public int getEmployees() { return employees; }
+    public String getType() { return type; }
+}

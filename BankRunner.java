@@ -1,31 +1,36 @@
-
-class BankRunner {
+public class BankRunner {
     public static void main(String[] args) {
-        Bank[] banks = new Bank[5];
+        Bank b1 = new Bank("SBI", 111);
+        System.out.println(b1.getName());
+        System.out.println(b1.getCode());
+        System.out.println("--------");
 
-        banks[0] = new Bank();
-        banks[0].setName("SBI");
-        banks[0].setCode("SBIN0001");
+        Bank b2 = new Bank("ICICI", 112, "Mumbai");
+        System.out.println(b2.getName());
+        System.out.println(b2.getCode());
+        System.out.println(b2.getBranch());
+        System.out.println("--------");
 
-        banks[1] = new Bank();
-        banks[1].setName("HDFC");
-        banks[1].setCode("HDFC0002");
+        Bank b3 = new Bank("HDFC", 113, "Bangalore", 500);
+        System.out.println(b3.getName());
+        System.out.println(b3.getCode());
+        System.out.println(b3.getBranch());
+        System.out.println(b3.getEmployees());
+        System.out.println("--------");
 
-        banks[2] = new Bank();
-        banks[2].setName("ICICI");
-        banks[2].setCode("ICIC0003");
+        Bank b4 = new Bank("Canara", 114, "Chennai", 800, "Government");
+        System.out.println(b4.getName());
+        System.out.println(b4.getCode());
+        System.out.println(b4.getBranch());
+        System.out.println(b4.getEmployees());
+        System.out.println(b4.getType());
+        System.out.println("--------");
 
-        banks[3] = new Bank();
-        banks[3].setName("Axis");
-        banks[3].setCode("AXIS0004");
-
-        banks[4] = new Bank();
-        banks[4].setName("Canara");
-        banks[4].setCode("CANA0005");
-
-        for (Bank b : banks) {
-            System.out.println(b.getName());
-            System.out.println(b.getCode());
-        }
+        Bank b5 = new Bank("Axis", 115, "Pune", 600, "Private");
+        System.out.println(b5.getName());
+        System.out.println(b5.getCode());
+        System.out.println(b5.getBranch());
+        System.out.println(b5.getEmployees());
+        System.out.println(b5.getType());
     }
 }

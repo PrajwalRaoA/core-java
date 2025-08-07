@@ -1,50 +1,36 @@
 class School {
     private String name;
-    private int code;
-    private String city;
-    private int strength;
-    private String type;
+    private String location;
+    private int numberOfStudents;
+    private Principal principal;
 
     public School() {
     }
 
-    public School(String name, int code) {
-        System.out.println("Initializing name and code");
+    public School(String name, String location, int numberOfStudents) {
         this.name = name;
-        this.code = code;
+        this.location = location;
+        this.numberOfStudents = numberOfStudents;
     }
 
-    public School(String name, int code, String city) {
-        this(name, code);
-        System.out.println("Initializing city");
-        this.city = city;
+    public String getName() {
+        return name;
     }
 
-    public School(String name, int code, String city, int strength) {
-        this(name, code, city);
-        System.out.println("Initializing strength");
-        this.strength = strength;
+    public String getLocation() {
+        return location;
     }
 
-    public School(String name, int code, String city, int strength, String type) {
-        this(name, code, city, strength);
-        System.out.println("Initializing type");
-        this.type = type;
+    public int getNumberOfStudents() {
+        return numberOfStudents;
     }
 
-    public String getName() { 
-    return name;
+    public void setPrincipal(Principal principal) {
+        this.principal = principal;
     }
-    public int getCode() { 
-     return code; 
-    }
-    public String getCity() { 
-     return city; 
-    }
-    public int getStrength() { 
-     return strength; 
-     }
-    public String getType() {  
-     return type; 
+
+    public Principal getPrincipal() {
+        return principal;
     }
 }
+

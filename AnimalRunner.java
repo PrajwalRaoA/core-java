@@ -1,9 +1,9 @@
-class AnimalRunner
-{
- public static void main(String[] args)
-{
- Animal animal=new Animal("dog");
- System.out.println(animal.getName());
+package com.xworkz.inheritance;
+
+public class AnimalRunner {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.setName("Dog");
+        System.out.println(animal.getName());
+    }
 }
-}
- 

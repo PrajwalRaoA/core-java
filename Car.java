@@ -1,49 +1,26 @@
-public class Car {
-    private String model;
+package com.xworkz.inheritance;
+
+public class Car extends Vehicle
+{
+    private int seatingCapacity;
     private String fuelType;
-    private String transmission;
-    private double price;
 
-    public static int wheels;
-
-    static {
-        System.out.println("Static block in Car");
-        wheels = 4;
-    }
-
+    public void setSeatingCapacity(int seatingCapacity)
     {
-        System.out.println("Non-static block in Car");
+        this.seatingCapacity = seatingCapacity;
+    }
+    public int getSeatingCapacity()
+    {
+        return seatingCapacity;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public void setFuelType(String fuelType) {
+    public void setFuelType(String fuelType)
+    {
         this.fuelType = fuelType;
     }
-
-    public void setTransmission(String transmission) {
-        this.transmission = transmission;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getFuelType() {
+    public String getFuelType()
+    {
         return fuelType;
     }
-
-    public String getTransmission() {
-        return transmission;
-    }
-
-    public double getPrice() {
-        return price;
-    }
 }
+

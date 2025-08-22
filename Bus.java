@@ -1,20 +1,26 @@
-class Bus
+package com.xworkz.inheritance;
+
+public class Bus extends Vehicle
 {
- static char busSeries = 'A';
- static short busNumber = 5467;
- static float milage = 15.3f;
- static int price = 500000;
- static int numberofPassenger = 20;
- static int ticketPrice = 15;
+    private int capacity;
+    private String serviceType;
 
- public static int getTotalPrice(int numberOfBuses){
- int totalPrice = price * numberOfBuses;
- return totalPrice;
- }
+    public void setCapacity(int capacity)
+    {
+        this.capacity = capacity;
+    }
+    public int getCapacity()
+    {
+        return capacity;
+    }
 
- public static int totalAmountInTrip() {
- int totalAmount = numberofPassenger * ticketPrice;
- return totalAmount;
-}
+    public void setServiceType(String serviceType)
+    {
+        this.serviceType = serviceType;
+    }
+    public String getServiceType()
+    {
+        return serviceType;
+    }
 }
 

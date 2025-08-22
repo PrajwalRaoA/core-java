@@ -1,46 +1,26 @@
-class Bike {
- static String name="Bullet";
- static String company="Royal enfield";
- static float price=100000;
- static String colour="black";
- static float milage=35;
+package com.xworkz.inheritance;
 
-public static void main(String[] args) 
+public class Bike extends Vehicle
 {
- String Name=nameofBike();
- System.out.println(Name);
+    private int engineCC;
+    private String type;
 
- String Company=nameofCompany();
- System.out.println(Company);
+    public void setEngineCC(int engineCC)
+    {
+        this.engineCC = engineCC;
+    }
+    public int getEngineCC()
+    {
+        return engineCC;
+    }
 
- float Price=priceofBike();
- System.out.println(Price);
+    public void setType(String type)
+    {
+        this.type = type;
+    }
+    public String getType()
+    {
+        return type;
+    }
+}
 
- String Colour=colourofBike();
-System .out.println(Colour);
-
- float Milage=milageofBike();
- System.out.println(Milage);
-
- }
-public static String nameofBike()
-{
- return name;
-}
-public static String nameofCompany()
-{
- return company;
-}
-public static float priceofBike()
-{
- return price;
-}
-public static String colourofBike()
-{
- return colour;
-}
-public static float milageofBike()
-{
- return milage;
-}
-}

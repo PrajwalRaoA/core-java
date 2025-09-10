@@ -1,10 +1,8 @@
 package com.xworkz.inheritance;
 
-public class Bank {
-    public String timing ="10 to 4";
+public class Axis extends Bank {
 
     public float getRateOfInterest() {
-        return 5.0f;
-
+        return 6.5f;
     }
 }

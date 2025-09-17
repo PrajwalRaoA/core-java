@@ -1,7 +1,7 @@
-package com.xworkz.inheritance;
+package com.xworkz.abstraction;
 
-public class Payment {
-    public void makePayment(int amount) {
-        System.out.println("Making Payment");
-    }
+public interface Payment {
+    void pay(double amount);
+
+    void refund(double amount);
 }

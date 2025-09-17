@@ -1,20 +1,10 @@
-package com.xworkz.inheritance;
+package com.xworkz.abstraction;
 
-public class Cat extends Animal {
-    private String breed;
-    private String eyeColor;
-
-    public void setBreed(String breed) {
-        this.breed = breed;
+public class Cat implements Animal {
+    public void sound() {
+        System.out.println("Cat meows.");
     }
-    public String getBreed() {
-        return breed;
-    }
-
-    public void setEyeColor(String eyeColor) {
-        this.eyeColor = eyeColor;
-    }
-    public String getEyeColor() {
-        return eyeColor;
+    public void eat() {
+        System.out.println("Cat drinks milk.");
     }
 }

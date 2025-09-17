@@ -1,12 +1,6 @@
-package com.xworkz.inheritance;
+package com.xworkz.abstraction;
 
-public class Animal {
-    private String name;
-    public void setName( String name) {
-        this.name = name;
-    }
-    public String getName(){
-        return name;
-    }
-
+public interface Animal {
+        void sound();
+        void eat();
 }
